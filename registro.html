@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+ 
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display:flex;
+            flex-direction: column;
+            margin-left: 20px;
+            margin-right: 20px;
+            justify-content: center;
+           
+        }
+ 
+        form{
+            background-color: #f0e7e7;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 40%;
+            display:flex;
+            flex-direction: column;
+        }
+ 
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select{
+            width: 30%;
+            padding: 10px;
+            margin-top: 6px;
+        }
+ 
+        h1{
+            text-align: center;
+            color: rgb(3, 4, 57);
+        }
+ 
+        label{
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+            color:black;
+        }
+ 
+        .radio-group{
+            margin-top: 10px;
+        }
+ 
+        .radio-group label{
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+ 
+        button{
+            width: 30% ;
+            margin-top: 25px;
+            padding: 12px;
+            background-color: rgb(2, 92, 92);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: medium;
+            cursor: pointer;
+            transition:  background-color 0.3s ease;
+        }
+ 
+        button:hover{
+            background-color: #476d50;
+        }
+       
+    </style>
+ 
+</head>
+ 
+<body>
+    <header >
+        <h1>Mi primer sitio web</h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Inicio</a> </li>
+               
+                <li> <a href="acerca.html">Acerca de</a> </li>
+               
+                <li> <a href="servicios.html">Servicios</a> </li>
+               
+                <li> <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="registro.html">Registro</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main>
+ 
+        <form action="">
+            <h1>Formulario de Registro</h1>
+            <label for="nombre">Nombre:</label>
+           
+            <input type="text" name="nombre" id="nombre">
+           
+            <label for="correo">Correo electrónico:</label>
+           
+            <input type="email" name="correo" id="correo">
+           
+           
+            <label>Genero:</label>
+           
+            <div class="radio-group">
+                <input type="radio" name="genero" id="masculino" value="masculino">
+                <label for="masculino">Masculino</label>
+ 
+                <input type="radio" name="genero" id="femenino" value="femenino">
+                <label for="femenino">Femenino</label>
+            </div>
+         
+ 
+            <label for="pais">Pais de Residencia</label>
+           
+            <select name="pais" id="pais">
+                <option value="">--Selecciona un pais--</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="argentina">Argentina</option>
+            </select>
+ 
+           
+ 
+            <label for="fechaNac">Fecha de Nacimiento:</label>
+           
+            <input type="date" id="fechaNac" name="fechaNac">
+           
+ 
+            <button type="submit">Registrar</button>
+ 
+ 
+        </form>
+ 
+    </main>
+ 
+    <footer >
+        <p>&copy; 2024 Mi primer sitio web. Todos los derechos reservados.</p>
+ 
+    </footer>
+</body>
+ 
+</html>
